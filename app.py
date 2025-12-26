@@ -5,8 +5,9 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 API_KEY = "227e8011f24774c040d2c04674a75cb3"
 
 st.set_page_config(page_title="Weather", page_icon="🌤️")
-st.title("WEATHER")
-with st.form("Weather"): 
+
+with st.form("Weather"):
+    st.title("WEATHER") 
     city = st.text_input("City:")
     submitted = st.form_submit_button("Confirm")
 if submitted:
