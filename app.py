@@ -8,7 +8,7 @@ st.set_page_config(page_title="Weather", page_icon="🌤️")
 st.title("WEATHER") 
 with st.form("Weather"):
     city = st.text_input("City:")
-    submitted = st.form_submit_button("Confirm")
+    submitted = st.form_submit_button("Submit")
 if submitted:
     url = f"{BASE_URL}?q={city}&appid={API_KEY}&units=metric"
     try:
